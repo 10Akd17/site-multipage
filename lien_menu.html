@@ -66,7 +66,7 @@
 
     <nav>
         <div class="ancreNav">
-            <a href="index.html" class="activ">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="texte.html">Textes</a>
             <a href="selecteur.html">Selecteurs</a>
             <a href="image.html">Images</a>
@@ -74,7 +74,7 @@
             <a href="tableau.html">Tableaux</a>
             <a href="zoning.html">Zoning</a>
             <a href="listes.html">Listes</a>
-            <a href="lien_menu.html">Liens & menus</a>
+            <a href="lien_menu.html"  class="activ">Liens & menus</a>
             <a href="formulaire.html">Formulaire</a>
             <a href="multimedia.html">Multimedias</a>
             <a href="animation.html">Animations</a>
@@ -82,6 +82,85 @@
     </nav>
 
     <main>
+
+        <h2>Liens & Menu</h2>
+
+        <div class="ancre">
+            <a href="#lien">Les liens</a>
+            <a href="#menu">Les menus</a>
+            <a href="#menuDeroulant">Les menus déroulant</a>
+        </div>
+
+        <section id="lien"><h3>Les liens</h3>
+            <a href="https://codepen.io/" target="blank" title="Se rendre sur le site CodePen, s'ouvre dans un nouvel onglet">CodePen is a social develepment environement for front-end desginers and developers</a>
+            <br>
+            <a href="files/CV_2021-08-02_Abdelkarim_Cherif.pdf">Voir mon CV</a> <!--DIFFERENT SUR LES NAVIGATEUR FIREFOX ET CHROME-->
+            <br>
+            <a href="#" onclick="window.print()">Imprimer la page</a>
+            <br>
+            <p>
+                Cliquez <a href="index.html">ici</a>
+                pour vous rendre a la page d'acceuil.
+            </p>
+        </section>
+
+        <section id="menu">
+            <h3>Les menus</h3>
+
+            <nav>
+                <ul>
+                    <li><a href="#">ACCEUIL</a></li>
+                    <li><a href="#">PARCOURS</a></li>
+                    <li><a href="#">COMPETENCES</a></li>
+                    <li><a href="#">REALISATIONS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="menuDeroulant">
+            <h3>les menus deroulant</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li>
+                        <a href="#">Acceuil</a>
+                    </li>
+
+                    <li class="sousMenu">
+                        <a href="#">Formation</a>
+                        <ul class="niveau2">
+                            <li><a href="#">Etudiant</a></li>
+                            <li><a href="#">Emploie du temps</a></li>
+                            <li><a href="#">Recherche d'emploi</a></li>
+                            <li><a href="#">Documents</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Information</a></li>
+
+                    <li class="sousMenu ">
+                        <a href="#">Cours</a>
+                        <ul class="niveau2">
+                           
+                                <li><a href="#">Internet</a></li>
+                                <li><a href="#">HTML / Css</a></li>
+                                <li><a href="#">CMS </a></li>
+                                <li><a href="#">STATS</a></li>
+                                <li><a href="#">RESEAUX SOCIAUX</a></li>
+                                <li><a href="#">REFERENCEMENT</a></li>
+                                <li><a href="#">MARKETING</a></li>
+                                <li><a href="#">CAHIER DES CHARGES</a></li>
+                                <li><a href="#">PHOTOSHOP</a></li>
+                        </ul>
+                    </li>
+
+                    
+                    <li><a href="files/CV_2021-08-02_Abdelkarim_Cherif.pdf">Mon CV
+
+                    </a></li>
+                </ul>
+            </nav>
+        </section>
 
     </main>
 

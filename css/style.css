@@ -32,15 +32,17 @@ time, mark, audio, video {
 }
 
 body{
-	background-image: url(../img/concrete-texture.png);
+
+    background-color: #444444a9;
 }
 
 h1{
 	font-family: 'Anton', sans-serif;
 	font-size: 45px;
-	color: #2980b9;
+	color: #ffffff;
 	text-align: center;
 	letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2{
@@ -65,7 +67,7 @@ h4{
 
 /**************HEADER INDEX****************/
 header{
-	background-color: #2c3e50;
+	background-color: #772a2a;
 	height: 175px;
 }
 
@@ -74,6 +76,10 @@ header{
 	width: 25%;
 	padding: 15px;
 	text-align: center;
+}
+
+#logo button{
+    color: #ffd700;
 }
 
 #slogan{
@@ -95,31 +101,33 @@ header{
 }
 
 header a{
-	color: #2980b9;
+	color: #ffd700;
 	text-decoration: none;
 }
 /*******************FIN HEADER*********************/
 
 /*******************DEBUT NAV*********************/
 nav{
-	background-color: #2980b9;
+	background-color: #ff5733 ;
 	height: 70px;
-	border-bottom: 8px solid #6acafc;
+	border-bottom: 8px solid  #ff2608 ;
 	text-align: center;
 	padding: 15px;
+
 }
 
 nav a{
-	margin: 10px;
+	margin: 6px;
 	padding: 2px 10px;
 	border-radius: 10px 0;
-	border: 2px solid white;
-	background-color: #6acafc;
+	border: 2px solid #f5ce00;
+	background-color: #6ac9fc77;
 	color: white;
 	text-decoration: none;
 	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
 	transition: .5s;
+
 }
 
 nav a:hover{
@@ -128,7 +136,7 @@ nav a:hover{
 }
 
 .activ{
-	background-color: #2c3e50;
+	background-color: #ffd700;
 	color: white;
 }
 /*******************FIN NAV*********************/
@@ -142,7 +150,7 @@ main{
 
 aside{
 	height: 250px;
-	background-color: #a6d6c3;
+	background-color: #772a2a ;
 }
 
 section{
@@ -151,7 +159,7 @@ section{
 }
 
 footer{
-	background-color: #2980b9;
+	background-color: #ff5733;
 	height: 30px;
 	text-align: right;
 	padding: 5px 10px;
@@ -713,8 +721,9 @@ button{
 
 #zoning7 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: darkblue;
+    color: white;
 
 }
 #zoning7 header div:nth-child(2){
@@ -726,16 +735,523 @@ button{
     height: 10px;
     background-color: cadetblue;
     border-bottom: none;
+    color: white;
+}
+#zoning7 main{
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+    color: white;
+
 }
 
-#zoning7 aside{
 
+#zoning7 aside{
     width: 20%;
     height:700px ;
+    margin-left: 0;
 }
 
 #zoning7 section{
-    display: flex;
-    justify-content: column;
+    width: 40%;
+    margin-top: 0;
+    height: 200px;
+}
 
+#zoning7 section:nth-child(3){
+    background-color: rgb(22, 38, 90);
+}
+
+#zoning7 section:nth-child(2){
+    background-color: rgb(197, 197, 197);
+}
+
+#zoning7 .slideshow{
+    width: 80%;
+    background-color: #2d4153;
+    margin-left: 20%;
+    margin-top: -500px;
+    height: 350px;
+}
+
+#zoning7 .zone3,
+#zoning7 .zone4,
+#zoning7 .zone5,
+#zoning7 .zone6{
+    width: 20%;
+    background-color: rgb(22, 38, 90);
+    height: 170px;
+    margin-top: -170px;
+}
+
+#zoning7 .zone3,
+#zoning7 .zone5{
+    background-color: rgb(197, 197, 197);
+}
+
+
+#zoning7 footer{
+    color: white;
+    height: 60px;
+    background-color: #2d5c7f;
+}
+
+/*******************FIN PAGE ZONING*********************/
+
+/*******************DEBUT PAGE LISTE*********************/
+
+ul.fruit{
+    list-style: none;
+
+}
+
+ul.fruit li{
+    display: inline;
+    margin: 15px;
+}
+
+li .fas{
+    font-size: 90%;
+    color: blue;
+}
+
+li .fas:hover{
+    font-size: 120%;
+    color: darkred;
+}
+
+ol, .imbriquee, .imbriquee ul{
+    padding-left: 15px;
+}
+
+.imbriquee{
+    cursor: pointer;
+}
+
+.imbriquee ul{
+    display: none;
+}
+
+.europe:hover ul,
+.asie:hover ul{
+    display: block;
+}
+
+.imbriquee li ul li:hover{
+    font-size: 200%;
+    background-color: darkred;
+    display: inline;
+    box-shadow: 5px 10px 10px gray;
+    transition-duration: 1s;
+}
+
+/*******************FIN PAGE LISTES*********************/
+
+/*******************DEBUT PAGE LIENS & MENU*********************/
+
+.ancre{
+    text-align: center;
+
+}
+
+.ancre a{
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+}
+
+.ancre a:hover{
+    box-shadow: none;
+    transition-duration: .5s;
+    text-shadow: 1px 5px 10px grey;
+}
+
+#lien a{
+    text-decoration: none;
+    color: #2980b9;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#lien a:hover{
+    color: red;
+
+}
+
+/********MENU********/
+
+#menu nav{
+    background-color: transparent;
+    border: none;
+}
+
+#menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu nav a{
+    padding: 15px;
+    color: grey ;
+    text-decoration: none;
+    background-color: #ddd;
+    transition: 1s ease-in;
+}
+#menu nav a:hover{
+    color: #fff;
+    background-color: darkcyan;
+
+}
+
+
+
+/********MENU DEROULANT*******/
+
+#menuDeroulant{
+    height: 650px;
+
+}
+
+#menuDeroulant nav{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#menuDeroulant nav ul li{
+    float: left;
+    list-style: none;
+    width: 20%;
+}
+#menuDeroulant ul ul{
+    display:none;
+
+}
+
+#menuDeroulant ul li ul li{
+    border-top: 1px solid white;
+    width: 100%;
+
+}
+
+#menuDeroulant nav li{
+    background-color: #ccc;
+
+}
+
+#menuDeroulant nav li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px 0 4px;
+    display: block;
+
+}
+
+#menuDeroulant ul{
+    text-align: center;
+
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+    display: block;
+
+}
+
+
+/*******************FIN PAGE LIEN  & MENU*********************/
+
+/*******************DEBUT PAGE FORMULAIRE*********************/
+
+form{
+    width: 50%;
+    background-color: #09438a;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+label{
+    margin: 10px 0;
+    width: 50%;
+    display: inline-block;
+
+}
+
+textarea{
+    resize: none;
+
+}
+
+label[for="orange"],
+label[for="fraise"],
+label[for="poire"]{
+    width: 13%;
+}
+
+#orange,#poire,#fraise{
+    margin: 0 20px;
+}
+
+/*******************FIN PAGE FORMULAIRE*********************/
+
+/*******************DEBUT PAGE MULTIMEDIA*********************/
+
+.videoFond{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.videoFond video{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.videoTexte{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.videoFond p{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    z-index: 2;
+    width: 500px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px ;
+    font-size: 120%;
+    border-radius: 10px;
+}
+
+iframe[src="https://www.youtube.com/embed/yhoGtNiNX40"]{
+    width: 100%;
+}
+
+iframe[allowfullscreen]{
+    width: 100%;
+}
+
+.audio{
+    text-align: center;
+}
+
+
+/*******************FIN PAGE MULTIMEDIA*********************/
+
+/*******************DEBUT PAGE ANIMATION*********************/
+
+.infoBulle{
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background-color: #444;
+    box-shadow: 0 0 50px #222 inset;
+}
+
+
+.infoBulle p{
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.infoBulle a{
+
+    color: #ccc;
+    text-shadow: 0 -2px 0 black;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.infoBulle a:hover{
+    text-shadow: 0 1px 2px black;
+    background-color: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.infoBulle a span{
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    color: royalblue;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+    transform: scale(0) rotateZ(-12deg);
+}
+
+.infoBulle a:hover span{
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+
+}
+
+.infoBulle span::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+
+/*******IMAGE GREYSCALE & BLUR********/
+
+.imgEffets{
+    width: 320px;
+    height: 300px;
+    margin: 70px auto;
+}
+
+.imgEffets li{
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+
+.imgEffets li:nth-child(3){
+    clear: both;
+
+}
+
+.imgEffets img{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    transition: .5s cubic-bezier(0,3,.4,1);
+}
+
+.imgEffets li:hover img{
+    z-index: 2;
+    transform: scale(1.5) ;
+    box-shadow: 0 0 10px black;
+
+}
+
+.imgEffets:hover li:not(:hover) img{
+    filter: grayscale(1) blur(10px);
+}
+
+
+/*******ROTATION D'UN MENU CSS 3********/
+
+#menuRotate{
+    height: 350px;
+    width: 570px;
+    background-color: #627878;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    margin: 100px auto;
+}
+
+#menuRotate .masque{
+    position: absolute;
+    z-index: 50;
+    width: 585px;
+    height: 135px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#324040,#627878);
+}
+
+#menuRotate .ombre{
+    position: absolute;
+    top: 30px;
+    left: 142px;
+    z-index: 40;
+    width: 300px;
+    height: 6px;
+    box-shadow: 0 100px 3px black;
+    border-radius: 75px 75px 75px 75px / 3px 3px 3px 3px;
+
+}
+
+#menuRotate dl{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 155px;
+    color: #324040;
+    text-align: center;
+    background-color: rgb(93, 112, 112);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    transform-origin: 50% 120px ;
+    animation: bounceOut .7s ease-in-out;
+}
+
+#menuRotate dt{
+    position: absolute;
+    bottom: 0 ;
+    width: 100%;
+    height: 23px;
+    padding-top:5px ;
+
+}
+
+#menuRotate dd{
+    transform: rotate(180deg);
+
+}
+
+#menuRotate dd a{
+    display: block;
+    height: 24px;
+    padding: 3px 0;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+
+#menuRotate dd a:hover{
+    background: rgba(255, 255, 255, .1);
+}
+
+#menuRotate dl:hover{
+    transform: rotate(-180deg);
+    animation: bounceIn .7s ease-in-out;
+}
+
+@keyframese bounceIn{
+    from{transform: rotate(0deg);}
+    75%{transform: rotate(0deg);}
+    90%{transform: rotate(0deg);}
+    to{transform: rotate(0deg);}
+}
+
+@keyframese bounceOut{
+    from{transform: rotate(0deg);}
+    0%{transform: rotate(-180deg);}
+    10%{transform: rotate(-165deg);}
+    to{transform: rotate(-360deg);}
 }
